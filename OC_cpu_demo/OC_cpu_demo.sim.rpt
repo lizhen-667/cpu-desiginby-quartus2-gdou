@@ -1,0 +1,221 @@
+Simulator report for OC_cpu_demo
+Sat Apr 18 17:29:11 2026
+Quartus II Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+
+
+---------------------
+; Table of Contents ;
+---------------------
+  1. Legal Notice
+  2. Simulator Summary
+  3. Simulator Settings
+  4. Simulation Waveforms
+  5. Coverage Summary
+  6. Complete 1/0-Value Coverage
+  7. Missing 1-Value Coverage
+  8. Missing 0-Value Coverage
+  9. Simulator INI Usage
+ 10. Simulator Messages
+
+
+
+----------------
+; Legal Notice ;
+----------------
+Copyright (C) 1991-2010 Altera Corporation
+Your use of Altera Corporation's design tools, logic functions 
+and other software and tools, and its AMPP partner logic 
+functions, and any output files from any of the foregoing 
+(including device programming or simulation files), and any 
+associated documentation or information are expressly subject 
+to the terms and conditions of the Altera Program License 
+Subscription Agreement, Altera MegaCore Function License 
+Agreement, or other applicable license agreement, including, 
+without limitation, that your use is for the sole purpose of 
+programming logic devices manufactured by Altera and sold by 
+Altera or its authorized distributors.  Please refer to the 
+applicable agreement for further details.
+
+
+
++--------------------------------------------+
+; Simulator Summary                          ;
++-----------------------------+--------------+
+; Type                        ; Value        ;
++-----------------------------+--------------+
+; Simulation Start Time       ; 0 ps         ;
+; Simulation End Time         ; 800.0 ns     ;
+; Simulation Netlist Size     ; 58 nodes     ;
+; Simulation Coverage         ;      98.25 % ;
+; Total Number of Transitions ; 453          ;
+; Simulation Breakpoints      ; 0            ;
+; Family                      ; Cyclone II   ;
++-----------------------------+--------------+
+
+
++-------------------------------------------------------------------------------------------------------------------------+
+; Simulator Settings                                                                                                      ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Option                                                                                     ; Setting    ; Default Value ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+; Simulation mode                                                                            ; Functional ; Timing        ;
+; Start time                                                                                 ; 0 ns       ; 0 ns          ;
+; Simulation results format                                                                  ; CVWF       ;               ;
+; Add pins automatically to simulation output waveforms                                      ; On         ; On            ;
+; Check outputs                                                                              ; Off        ; Off           ;
+; Report simulation coverage                                                                 ; On         ; On            ;
+; Display complete 1/0 value coverage report                                                 ; On         ; On            ;
+; Display missing 1-value coverage report                                                    ; On         ; On            ;
+; Display missing 0-value coverage report                                                    ; On         ; On            ;
+; Detect setup and hold time violations                                                      ; Off        ; Off           ;
+; Detect glitches                                                                            ; Off        ; Off           ;
+; Disable timing delays in Timing Simulation                                                 ; Off        ; Off           ;
+; Generate Signal Activity File                                                              ; Off        ; Off           ;
+; Generate VCD File for PowerPlay Power Analyzer                                             ; Off        ; Off           ;
+; Group bus channels in simulation results                                                   ; Off        ; Off           ;
+; Preserve fewer signal transitions to reduce memory requirements                            ; On         ; On            ;
+; Trigger vector comparison with the specified mode                                          ; INPUT_EDGE ; INPUT_EDGE    ;
+; Disable setup and hold time violations detection in input registers of bi-directional pins ; Off        ; Off           ;
+; Overwrite Waveform Inputs With Simulation Outputs                                          ; On         ;               ;
+; Perform Glitch Filtering in Timing Simulation                                              ; Auto       ; Auto          ;
++--------------------------------------------------------------------------------------------+------------+---------------+
+
+
++----------------------+
+; Simulation Waveforms ;
++----------------------+
+Waveform report data cannot be output to ASCII.
+Please use Quartus II to view the waveform report data.
+
+
++--------------------------------------------------------------------+
+; Coverage Summary                                                   ;
++-----------------------------------------------------+--------------+
+; Type                                                ; Value        ;
++-----------------------------------------------------+--------------+
+; Total coverage as a percentage                      ;      98.25 % ;
+; Total nodes checked                                 ; 58           ;
+; Total output ports checked                          ; 57           ;
+; Total output ports with complete 1/0-value coverage ; 56           ;
+; Total output ports with no 1/0-value coverage       ; 1            ;
+; Total output ports with no 1-value coverage         ; 1            ;
+; Total output ports with no 0-value coverage         ; 1            ;
++-----------------------------------------------------+--------------+
+
+
+The following table displays output ports that toggle between 1 and 0 during simulation.
++----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Complete 1/0-Value Coverage                                                                                                                                                                                                      ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; Node Name                                                                                             ; Output Port Name                                                                                      ; Output Port Type ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+; |oc_cpu_demo|LD_IR                                                                                    ; |oc_cpu_demo|LD_IR                                                                                    ; pin_out          ;
+; |oc_cpu_demo|T2                                                                                       ; |oc_cpu_demo|T2                                                                                       ; out              ;
+; |oc_cpu_demo|LD_AD                                                                                    ; |oc_cpu_demo|LD_AD                                                                                    ; pin_out          ;
+; |oc_cpu_demo|inst56                                                                                   ; |oc_cpu_demo|inst56                                                                                   ; out0             ;
+; |oc_cpu_demo|inst55                                                                                   ; |oc_cpu_demo|inst55                                                                                   ; out0             ;
+; |oc_cpu_demo|op[2]                                                                                    ; |oc_cpu_demo|op[2]                                                                                    ; out              ;
+; |oc_cpu_demo|op[1]                                                                                    ; |oc_cpu_demo|op[1]                                                                                    ; out              ;
+; |oc_cpu_demo|op[0]                                                                                    ; |oc_cpu_demo|op[0]                                                                                    ; out              ;
+; |oc_cpu_demo|WR_R                                                                                     ; |oc_cpu_demo|WR_R                                                                                     ; pin_out          ;
+; |oc_cpu_demo|inst59                                                                                   ; |oc_cpu_demo|inst59                                                                                   ; out0             ;
+; |oc_cpu_demo|inst57                                                                                   ; |oc_cpu_demo|inst57                                                                                   ; out0             ;
+; |oc_cpu_demo|T4                                                                                       ; |oc_cpu_demo|T4                                                                                       ; out              ;
+; |oc_cpu_demo|WR_M                                                                                     ; |oc_cpu_demo|WR_M                                                                                     ; pin_out          ;
+; |oc_cpu_demo|inst60                                                                                   ; |oc_cpu_demo|inst60                                                                                   ; out0             ;
+; |oc_cpu_demo|Set_Pc                                                                                   ; |oc_cpu_demo|Set_Pc                                                                                   ; pin_out          ;
+; |oc_cpu_demo|inst61                                                                                   ; |oc_cpu_demo|inst61                                                                                   ; out0             ;
+; |oc_cpu_demo|M                                                                                        ; |oc_cpu_demo|M                                                                                        ; pin_out          ;
+; |oc_cpu_demo|inst63                                                                                   ; |oc_cpu_demo|inst63                                                                                   ; out0             ;
+; |oc_cpu_demo|S0                                                                                       ; |oc_cpu_demo|S0                                                                                       ; pin_out          ;
+; |oc_cpu_demo|inst66                                                                                   ; |oc_cpu_demo|inst66                                                                                   ; out0             ;
+; |oc_cpu_demo|inst65                                                                                   ; |oc_cpu_demo|inst65                                                                                   ; out0             ;
+; |oc_cpu_demo|T3                                                                                       ; |oc_cpu_demo|T3                                                                                       ; out              ;
+; |oc_cpu_demo|S1                                                                                       ; |oc_cpu_demo|S1                                                                                       ; pin_out          ;
+; |oc_cpu_demo|inst69                                                                                   ; |oc_cpu_demo|inst69                                                                                   ; out0             ;
+; |oc_cpu_demo|inst68                                                                                   ; |oc_cpu_demo|inst68                                                                                   ; out0             ;
+; |oc_cpu_demo|S2                                                                                       ; |oc_cpu_demo|S2                                                                                       ; pin_out          ;
+; |oc_cpu_demo|inst71                                                                                   ; |oc_cpu_demo|inst71                                                                                   ; out0             ;
+; |oc_cpu_demo|S3                                                                                       ; |oc_cpu_demo|S3                                                                                       ; pin_out          ;
+; |oc_cpu_demo|inst73                                                                                   ; |oc_cpu_demo|inst73                                                                                   ; out0             ;
+; |oc_cpu_demo|CN                                                                                       ; |oc_cpu_demo|CN                                                                                       ; pin_out          ;
+; |oc_cpu_demo|inst70                                                                                   ; |oc_cpu_demo|inst70                                                                                   ; out0             ;
+; |oc_cpu_demo|inst72                                                                                   ; |oc_cpu_demo|inst72                                                                                   ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode21w[3] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode21w[3] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode21w[2] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode21w[2] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode21w[1] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode21w[1] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode31w[3] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode31w[3] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode31w[2] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode31w[2] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode31w[1] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode31w[1] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode41w[3] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode41w[3] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode41w[2] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode41w[2] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode41w[1] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode41w[1] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode4w[3]  ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode4w[3]  ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode4w[2]  ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode4w[2]  ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode4w[1]  ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode4w[1]  ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode51w[3] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode51w[3] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode51w[2] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode51w[2] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode51w[1] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode51w[1] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode61w[3] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode61w[3] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode61w[2] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode61w[2] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode61w[1] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode61w[1] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode71w[3] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode71w[3] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode71w[2] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode71w[2] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode71w[1] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode71w[1] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode81w[3] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode81w[3] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode81w[2] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode81w[2] ; out0             ;
+; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode81w[1] ; |oc_cpu_demo|lpm_decode0:inst|lpm_decode:lpm_decode_component|decode_c8f:auto_generated|w_anode81w[1] ; out0             ;
++-------------------------------------------------------------------------------------------------------+-------------------------------------------------------------------------------------------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 1 during simulation.
++------------------------------------------------------------+
+; Missing 1-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |oc_cpu_demo|op[3] ; |oc_cpu_demo|op[3] ; out              ;
++--------------------+--------------------+------------------+
+
+
+The following table displays output ports that do not toggle to 0 during simulation.
++------------------------------------------------------------+
+; Missing 0-Value Coverage                                   ;
++--------------------+--------------------+------------------+
+; Node Name          ; Output Port Name   ; Output Port Type ;
++--------------------+--------------------+------------------+
+; |oc_cpu_demo|op[3] ; |oc_cpu_demo|op[3] ; out              ;
++--------------------+--------------------+------------------+
+
+
++---------------------+
+; Simulator INI Usage ;
++--------+------------+
+; Option ; Usage      ;
++--------+------------+
+
+
++--------------------+
+; Simulator Messages ;
++--------------------+
+Info: *******************************************************************
+Info: Running Quartus II Simulator
+    Info: Version 9.1 Build 350 03/24/2010 Service Pack 2 SJ Web Edition
+    Info: Processing started: Sat Apr 18 17:29:11 2026
+Info: Command: quartus_sim --read_settings_files=on --write_settings_files=off OC_cpu_demo -c OC_cpu_demo
+Info: Using vector source file "C:/Users/ÀîÕð/Desktop/OC_cpu_demo/OC_cpu_demo.vwf"
+Info: Overwriting simulation input file with simulation results
+    Info: A backup of OC_cpu_demo.vwf called OC_cpu_demo.sim_ori.vwf has been created in the db folder
+Info: Option to preserve fewer signal transitions to reduce memory requirements is enabled
+    Info: Simulation has been partitioned into sub-simulations according to the maximum transition count determined by the engine. Transitions from memory will be flushed out to disk at the end of each sub-simulation to reduce memory requirements.
+Info: Simulation partitioned into 1 sub-simulations
+Info: Simulation coverage is      98.25 %
+Info: Number of transitions in simulation is 453
+Info: Vector file OC_cpu_demo.vwf is saved in VWF text format. You can compress it into CVWF format in order to reduce file size. For more details please refer to the Quartus II Help.
+Info: Quartus II Simulator was successful. 0 errors, 0 warnings
+    Info: Peak virtual memory: 164 megabytes
+    Info: Processing ended: Sat Apr 18 17:29:12 2026
+    Info: Elapsed time: 00:00:01
+    Info: Total CPU time (on all processors): 00:00:01
+
+

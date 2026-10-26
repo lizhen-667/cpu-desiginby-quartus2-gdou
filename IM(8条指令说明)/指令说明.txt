@@ -1,0 +1,29 @@
+DEPTH = 256;
+WIDTH = 16;
+ADDRESS_RADIX = HEX;
+DATA_RADIX = HEX;
+
+CONTENT BEGIN
+    // 原有8条
+    00 : 0001;   // MOVR R0,R1
+    01 : 180F;   // MOVD R2,#0FH
+    02 : 2C12;   // MOVM R3,12H
+    03 : 3C12;   // MOVB 12H,R3
+    04 : 4600;   // ADD R1,R2
+    05 : 5600;   // SUB R1,R2
+    06 : 6600;   // AND R1,R2
+    07 : 7000;   // JMP #00H
+
+    // 新增8条
+    08 : 8000;   // NOT R0
+    09 : 9400;   // INC R1
+    0A : A800;   // DEC R2
+    0B : B600;   // OR R1,R2
+    0C : C600;   // XOR R1,R2
+    0D : D010;   // JC #10H
+    0E : E020;   // JZ #20H
+    0F : F000;   // NOP
+
+    // 最后跳回开头，循环执行
+    10 : 7000;   // JMP 00H
+END;

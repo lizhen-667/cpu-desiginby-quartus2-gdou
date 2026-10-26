@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="DM_cpu_demp">
+		<CBX_INST_ENTRY INSTANCE_NAME="|DM_cpu_demp|lpm_ram_dq3:inst1|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_mmc1.tdf"/>
+	</PROJECT>
+</LOG_ROOT>

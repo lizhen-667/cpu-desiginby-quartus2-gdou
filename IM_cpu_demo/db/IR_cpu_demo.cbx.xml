@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<LOG_ROOT>
+	<PROJECT NAME="IR_cpu_demo">
+		<CBX_INST_ENTRY INSTANCE_NAME="|IM_cpu_demo|lpm_rom0:inst|altsyncram:altsyncram_component" CBX_FILE_NAME="altsyncram_5f81.tdf"/>
+	</PROJECT>
+</LOG_ROOT>
